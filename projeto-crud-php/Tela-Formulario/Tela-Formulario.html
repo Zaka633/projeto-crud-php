@@ -12,7 +12,7 @@
     
     <div class="box">
         <form action="">
-            <fieldset>
+            <fieldset class="p1">
                 <legend><b>Formulario Pacientes</b></legend>
                 <br>
                 <div class="inputBox">
@@ -29,19 +29,22 @@
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="nome" class="labelInput">telefone</label>
                 </div>
-                <br><br>
+                <br>
                 <p>Sexo:</p>
-                <input type="radio" id="feminino" nome="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <input type="radio" id="masculino" nome="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <input type="radio" id="outro" nome="genero" value="outro" required>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label><br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <div class="inputBox">
+            </fieldset>
+
+            <fieldset class="p2">
+                
                 <label for="data_nascimento"><b>Data de Nascimento</b></label>
-                <input type="date" id="data_nascimento" nome="data_nascimento" class="inputUser" required>
-                </div>
+                <input type="date" id="data_nascimento" nome="data_nascimento" required>
+            
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade"  id="cidade" class="inputUser" required>
@@ -57,10 +60,10 @@
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco" class="labelInput">endereço</label>
                 </div>
-                <br><br>
+                <br><br><br>
                 <input type="submit" name="submit" id="submit">
-
             </fieldset>
+            
         </form>
     </div>
 
