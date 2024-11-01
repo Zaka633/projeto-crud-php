@@ -5,9 +5,9 @@ session_start();
 if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
 {
 
-    unset($_SESSION['email'] = $email;)
-        unset($_SESSION['senha'] = $senha;)
-        header('location: login.php');
+    unset($_SESSION['email']($email));
+    unset($_SESSION['senha']($senha));
+    header('location: login.php');
 
 }
 
