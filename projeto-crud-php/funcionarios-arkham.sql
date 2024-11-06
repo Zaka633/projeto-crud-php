@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `formulario-arkham`
+-- Banco de dados: `funcionarios-arkham`
 --
 
 -- --------------------------------------------------------
@@ -30,22 +30,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nome` varchar(45) NOT NULL,
-  `email` varchar(110) NOT NULL,
-  `telefone` varchar(15) NOT NULL,
-  `sexo` varchar(15) NOT NULL,
-  `data_nasc` date NOT NULL,
-  `cidade` varchar(45) NOT NULL,
-  `estado` varchar(45) NOT NULL,
-  `endereco` varchar(45) NOT NULL
+  `senha` varchar(45) NOT NULL,
+  `email` varchar(110) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Despejando dados para a tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `telefone`, `sexo`, `data_nasc`, `cidade`, `estado`, `endereco`) VALUES
-(2, 'coringa', 'coringa@gmail.com', '123', 'masculino', '1970-06-17', 'gotham', 'nova jersey', 'streets'),
-(3, 'harley quenn', 'arlequina@gmail.com', '6969', 'feminino', '1979-11-28', 'gotham', 'nova jersey', 'streets');
+INSERT INTO `usuarios` (`id`, `nome`, `senha`, `email`) VALUES
+(1, 'batman', 'coringad4', 'batmail@wayne.com');
 
 --
 -- Índices para tabelas despejadas
@@ -65,7 +59,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
