@@ -15,6 +15,7 @@ if(isset($_POST['submit'])){
 
    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,cidade,estado,endereco)
    VALUES('$nome','$email','$telefone','$sexo','$data_nasc','$cidade','$estado','$endereco')");
+   header('Location: ../sistema/sistema.php');
 }
 ?>
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ if(isset($_POST['submit'])){
 <link rel="stylesheet" href="Formulario.css">
 <body>
 
-    <img src="logo.png" class="logo">
+<img src="../imagens/logo.png" class="logo">
     
     <div class="box">
         <form action="formulario.php" method="POST">

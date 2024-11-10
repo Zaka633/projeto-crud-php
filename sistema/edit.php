@@ -41,7 +41,7 @@
 </head>
 <body>
 
-    <img src="logo.png" class="logo">
+<img src="../imagens/logo.png" class="logo">
 
     <a href="sistema.php">Voltar</a>
     <div class="box">

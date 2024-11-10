@@ -13,8 +13,8 @@ body{
     .logo{
     
         position: absolute;
-        width: 47%;
-        left: 25%;
+        width: 85vh;
+        left: 28vw;
         background-color: rgba(0, 0, 0, 0.2);
         border: black;
         padding: 10px
@@ -33,16 +33,16 @@ body{
 }
 .p1{
     position: absolute;
-    top: 10%;
-    right: 48%;
+    top: 0vh;
+    right: 10vw;
     border: 0.5px solid gray;
     border-right: none;
     background-color: rgba(0, 0, 0, 0.7);
 
 }
-.p2{top: 73%;
+.p2{top: 2.8vh;
     position: absolute;
-    left: 51%;
+    left: 11.7vw;
     border: 0.5px solid gray;
     border-left: none;
     background-color: rgba(0, 0, 0, 0.7);

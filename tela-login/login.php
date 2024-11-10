@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <img src="logo.png" class="logo">
+<img src="../imagens/logo.png" class="logo">
     
     <div class="Login">
         <h1>Login</h1>
@@ -17,7 +17,7 @@
         <br><br>
         <input type="password" name="senha" placeholder="Senha">
         <br><br>
-        <button type="submit" class="botao" name="submit">Enviar</button>
+        <button type="submit" class="botao" name="submit">Entrar</button>
         </form>
     </div>
     

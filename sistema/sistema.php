@@ -32,29 +32,28 @@
 </head>
 
 <body>
-<img src="../imagens/logo.png" class="logo">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-secondary bg-gradient bg-dark">
     
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Asilo Arkham</a>
-            
+        <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="../imagens/logo2.png" style="width:150px;" class="logo"> </a>
+            <?php
+             echo "<h1 class='bemvindo'>Bem vindo <u>$logado</u></h1>";
+            ?>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
         <div class="d-flex">
-            <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+            <a href="sair.php" class="btn btn-secondary  me-5">Sair</a>
         </div>
     </nav>
     <br>
-    <?php
-        echo "<h1>Bem vindo <u>$logado</u></h1>";
-    ?>
     <br>
     <div class="box-search">
         <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">
-        <button onclick="searchData()" class="btn btn-primary">
+        <button onclick="searchData()" class="btn btn-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg>
@@ -91,7 +90,7 @@
                         echo "<td>".$user_data['estado']."</td>";
                         echo "<td>".$user_data['endereco']."</td>";
                         echo "<td>
-                        <a class='btn btn-sm btn-primary' href='edit.php?id=$user_data[id]' title='Editar'>
+                        <a class='btn btn-sm btn-dark' href='edit.php?id=$user_data[id]' title='Editar'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
                                 <path d='M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z'/>
                             </svg>

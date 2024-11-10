@@ -1,14 +1,11 @@
 .logo{
-    
-    position: absolute;
-    width: 20%;
-    top: 6%;
-    left: 6%;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: black;
-    padding: 10px
+transform: translateX(-40px);
 }
 
+.bemvindo{ transform: translateX(-220px);
+    
+
+}
 body{
     background-image: url(../imagens/hospital.png);
     background-size: cover;
@@ -26,13 +23,16 @@ body{
 .addpac{
     background-image: linear-gradient(45deg, gray, black);
     position:absolute;
-    top: 22%;
     width: 20%;
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 20px;
-    left: 39%;
+    left: 39vw;
+    top: 16vh;
+}
+.addpac:hover{
+    background-image: linear-gradient(to right,black, #1C1C1C);
 }
 .table-bg{
     background: rgba(0, 0, 0, 0.3);
