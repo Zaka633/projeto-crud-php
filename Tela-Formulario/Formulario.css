@@ -40,9 +40,9 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
 
 }
-.p2{top: 2.8vh;
-    position: absolute;
-    left: 11.7vw;
+.p2{position: absolute;
+    top: 1vh;
+    left: 11.35vw;
     border: 0.5px solid gray;
     border-left: none;
     background-color: rgba(0, 0, 0, 0.7);
@@ -93,11 +93,11 @@ legend{border: 1px solid gray ;
         background-image: linear-gradient(to right,gray, #1C1C1C);
         width: 100%;
         border: none;
-        padding: 17px;
+        padding: 12.6px;
         color: white;
         font-size: 19px;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 13px;
     }
     #submit:hover{
         background-image: linear-gradient(to right,black, #1C1C1C);

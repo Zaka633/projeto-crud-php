@@ -1,7 +1,6 @@
 <?php
     session_start();
     include_once('../Tela-Formulario/config.php');
-    // print_r($_SESSION);
     if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
     {
         unset($_SESSION['email']);
@@ -51,6 +50,7 @@
     </nav>
     <br>
     <br>
+    </div>
     <div class="box-search">
         <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">
         <button onclick="searchData()" class="btn btn-secondary">
@@ -58,8 +58,8 @@
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg>
         </button>
-        <a href="../Tela-Formulario/formulario.php"><button class="addpac">Adicionar Pacientes</button></a>
     </div>
+    <a href="../Tela-Formulario/formulario.php"><button class="addpac">Adicionar Pacientes</button></a>
     <div class="m-5">
         <table class="table text-white table-bg">
             <thead>

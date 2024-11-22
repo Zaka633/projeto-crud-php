@@ -48,7 +48,7 @@
         <form action="saveEdit.php" method="POST">
             <fieldset class="p1">
                 <legend><b>Editar Cliente</b></legend>
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
                     <label for="nome" class="labelInput">Nome completo</label>

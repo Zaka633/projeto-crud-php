@@ -80,7 +80,7 @@ if(isset($_POST['submit'])){
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco" class="labelInput">endereço</label>
                 </div>
-                <br><br>
+                <br><br><br>
                 <a href="../sistema/sistema.php"><button type="submit" name="submit" id="submit">Enviar</button></a>
             </fieldset>
             
